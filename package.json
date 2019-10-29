@@ -2,9 +2,11 @@
   "name": "style-component-library",
   "version": "1.0.0",
   "description": "react style-component uikit",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --watch",
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -15,10 +17,36 @@
     "style-components",
     "uikit"
   ],
+  "tags": [
+    "react",
+    "style-components",
+    "uikit"
+  ],
   "author": "patwapro",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/patwapro/style-component-library/issues"
   },
-  "homepage": "https://github.com/patwapro/style-component-library#readme"
+  "homepage": "https://github.com/patwapro/style-component-library#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "styled-components": "^4.4.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "react": "^16.11.0"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0"
+  }
 }
