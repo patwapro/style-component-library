@@ -1,0 +1,24 @@
+{
+  "name": "style-component-library",
+  "version": "1.0.0",
+  "description": "react style-component uikit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patwapro/style-component-library.git"
+  },
+  "keywords": [
+    "react",
+    "style-components",
+    "uikit"
+  ],
+  "author": "patwapro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patwapro/style-component-library/issues"
+  },
+  "homepage": "https://github.com/patwapro/style-component-library#readme"
+}
