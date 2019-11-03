@@ -1,6 +1,6 @@
 # Typography
 
-To implement Typographycomponent into your project you'll need to import:
+To implement Typography component into your project you'll need to import:
 
 ```jsx
 import { Typography } from "style-component-library";
