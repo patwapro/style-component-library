@@ -1,9 +1,15 @@
 # Typography
 
-```js
-import { Typography } from "style-component-library";
+To implement Typographycomponent into your project you'll need to import:
 
-<Typography as="h1">h1</Typography>;
+```jsx
+import { Typography } from "style-component-library";
+```
+
+After import into your project you can use it simply like:
+
+```jsx
+<Typography as="h1">Heading h1</Typography>
 ```
 
 ## Props
