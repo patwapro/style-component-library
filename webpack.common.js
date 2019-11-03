@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "build"),
     filename: "index.js",
-    libraryTarget: "commonjs2"
+    libraryTarget: "umd"
   },
   plugins: [new CleanWebpackPlugin()],
   module: {
@@ -30,6 +30,7 @@ module.exports = {
   },
   resolve: {
     alias: {
+      "styled-components": path.resolve("./node_modules", "styled-components"),
       "style-component-library": path.resolve(__dirname, "./src")
     }
   },
@@ -39,6 +40,12 @@ module.exports = {
     }
   },
   externals: {
-    react: "commonjs react"
+    react: "react",
+    "react-dom": "reactDOM",
+    "styled-components": {
+      commonjs: "styled-components",
+      commonjs2: "styled-components",
+      amd: "styled-components"
+    }
   }
 };
