@@ -7,6 +7,7 @@ Add them to your project by running:
 ```bash
 // with npm
 npm install style-component-library
+```
 
 ## Typography
 
